@@ -1,0 +1,63 @@
+.pedidos-container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Cabeçalho da tabela com cor escura */
+thead {
+  background-color: #2c2c2c !important;
+  color: white !important;
+}
+
+/* Colunas do cabeçalho com cor mais clara e centralizadas */
+th {
+  text-align: center;
+  background-color: rgba(54, 54, 54, 0.637);
+}
+
+/* Células com padding e centralização */
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+/* Linha da tabela em hover */
+tr:hover {
+  background-color: #eee;
+}
+
+/* Botões gerais (Editar, Excluir) */
+button {
+  margin-right: 5px;
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #82bbf8;
+}
+
+h2 {
+  text-align: center;
+}

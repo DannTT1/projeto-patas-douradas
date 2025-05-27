@@ -1,0 +1,88 @@
+{
+  "admin": [
+    {
+      "id": "1",
+      "usuario": "admin",
+      "senha": "1234"
+    }
+  ],
+  "clientes": [],
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Ração Premium Canina 15kg",
+      "descricao": "Nutrição de alta qualidade para o seu melhor amigo! A Ração Premium Canina 15kg é formulada com ingredientes selecionados para garantir energia, pelagem brilhante e uma digestão saudável. Ideal para cães adultos de todos os portes.",
+      "preco": 89.99,
+      "imagemUrl": "https://i.imgur.com/cOpZ8Eb.png"
+    },
+    {
+      "id": 2,
+      "nome": "Coleira Antipulgas Cães & Gatos",
+      "descricao": "Proteção eficiente e duradoura! A Coleira Antipulgas é indicada para cães e gatos, combatendo pulgas e carrapatos por até 4 meses. Confortável, resistente à água e com ajuste fácil.",
+      "preco": 14.99,
+      "imagemUrl": "https://i.imgur.com/bQSuRfM.png"
+    },
+    {
+      "id": 3,
+      "nome": "Areia Higiênica Felina 5kg",
+      "descricao": "Mais conforto e higiene para o seu gato! A Areia Higiênica Felina 5kg possui alta absorção, neutraliza odores e forma torrões firmes, facilitando a limpeza da caixinha. Perfeita para manter o ambiente sempre limpo.",
+      "preco": 29.99,
+      "imagemUrl": "https://i.imgur.com/krgsPhs.png"
+    },
+    {
+      "id": 4,
+      "nome": "Mordedor Pequeno Canino",
+      "descricao": "Diversão segura para cães de pequeno porte! O Mordedor Canino é feito de material atóxico e resistente, ideal para aliviar o estresse e manter os dentes limpos. Brincadeira garantida por horas!",
+      "preco": 7,
+      "imagemUrl": "https://i.imgur.com/C4RKYMM.png"
+    },
+    {
+      "id": 5,
+      "nome": "Coleira Peitoral Canina",
+      "descricao": "Conforto e segurança nos passeios! A Coleira Peitoral é ajustável, com fechamento reforçado e design anatômico que evita enforcamento. Ideal para cães ativos e cheios de energia.",
+      "preco": 100,
+      "imagemUrl": "https://i.imgur.com/Nhx5LGu.png"
+    },
+    {
+      "id": 6,
+      "nome": "Arranhador Felino",
+      "descricao": "O paraíso dos gatos em casa! O Arranhador Felino ajuda a manter as garras saudáveis e protege seus móveis. Com base firme, revestimento em sisal e espaço para descanso, é o brinquedo favorito dos felinos.",
+      "preco": 50,
+      "imagemUrl": "https://i.imgur.com/gKS0MWc.png"
+    }
+  ],
+  "pedidos": [
+    {
+      "id": 1,
+      "data": "2025-05-26T13:53:10.316Z",
+      "cliente": {
+        "nome": "João Eigenmann",
+        "email": "joao.vseigenmann@senacsp.edu.br",
+        "telefone": "11 91234-5678"
+      },
+      "itens": [
+        {
+          "id": 2,
+          "nome": "Coleira Antipulgas Cães & Gatos",
+          "descricao": "Proteção eficiente e duradoura! A Coleira Antipulgas é indicada para cães e gatos, combatendo pulgas e carrapatos por até 4 meses. Confortável, resistente à água e com ajuste fácil.",
+          "preco": 14.99,
+          "imagemUrl": "https://i.imgur.com/bQSuRfM.png"
+        },
+        {
+          "id": 3,
+          "nome": "Areia Higiênica Felina 5kg",
+          "descricao": "Mais conforto e higiene para o seu gato! A Areia Higiênica Felina 5kg possui alta absorção, neutraliza odores e forma torrões firmes, facilitando a limpeza da caixinha. Perfeita para manter o ambiente sempre limpo.",
+          "preco": 29.99,
+          "imagemUrl": "https://i.imgur.com/krgsPhs.png"
+        },
+        {
+          "id": 6,
+          "nome": "Arranhador Felino",
+          "descricao": "O paraíso dos gatos em casa! O Arranhador Felino ajuda a manter as garras saudáveis e protege seus móveis. Com base firme, revestimento em sisal e espaço para descanso, é o brinquedo favorito dos felinos.",
+          "preco": 50,
+          "imagemUrl": "https://i.imgur.com/gKS0MWc.png"
+        }
+      ]
+    }
+  ]
+}

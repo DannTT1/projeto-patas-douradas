@@ -1,0 +1,36 @@
+<div class="cadastro-produto-container">
+  <div class="form-container">
+    <h2 class="titulo-centralizado">Cadastrar Novo Produto</h2>
+    <form (ngSubmit)="salvar()" #form="ngForm">
+      <label>Nome:</label>
+      <input type="text" [(ngModel)]="produto.nome" name="nome" required />
+
+      <label>Descrição:</label>
+      <input
+        type="text"
+        [(ngModel)]="produto.descricao"
+        name="descricao"
+        required
+      />
+
+      <label>Preço:</label>
+      <input
+        type="number"
+        [(ngModel)]="produto.preco"
+        name="preco"
+        required
+      />
+
+      <label>Imagem (URL):</label>
+      <input
+        type="text"
+        [(ngModel)]="produto.imagemUrl"
+        name="imagemUrl"
+        required
+      />
+
+      <button type="submit" [disabled]="form.invalid">Salvar</button>
+      <button type="button" (click)="voltar()">Voltar</button>
+    </form>
+  </div>
+</div>

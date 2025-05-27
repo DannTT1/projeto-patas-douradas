@@ -1,0 +1,23 @@
+.pedidos-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.pedido {
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.pedido ul {
+  padding-left: 20px;
+}
+
+hr {
+  margin-top: 20px;
+}

@@ -1,0 +1,20 @@
+<div class="consulta-container">
+  <h2>Consultar Pedido</h2>
+  <div class="busca-box">
+    <input [(ngModel)]="termo" placeholder="Nome, e-mail ou telefone" />
+    <button (click)="consultar()">Buscar</button>
+  </div>
+<button class="btn-voltar" (click)="voltar()">⟵ Voltar</button>
+</div>
+
+<div *ngIf="resultados.length > 0">
+  <h3 class="resultados-titulo">Resultados:</h3>
+  <div *ngFor="let pedido of resultados" class="pedido">
+    <p><strong>Cliente:</strong> {{ pedido.cliente.nome }}</p>
+    <p><strong>Data:</strong> {{ pedido.data | date:'short' }}</p>
+    <p><strong>Total:</strong> R$ {{ getTotal(pedido) | number:'1.2-2' }}</p>
+    <hr />
+ </div>
+
+
+</div>

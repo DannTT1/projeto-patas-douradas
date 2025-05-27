@@ -1,0 +1,22 @@
+.produto-detalhes {
+  max-width: 800px;
+  margin: 40px auto;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.produto-detalhes img {
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.produto-detalhes .info {
+  flex: 1;
+}

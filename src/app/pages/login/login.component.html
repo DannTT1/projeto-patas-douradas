@@ -1,0 +1,17 @@
+<div class="login-container">
+  <h2>Login do Administrador</h2>
+
+  <form (ngSubmit)="login()">
+    <label>Usuário:</label>
+    <input [(ngModel)]="usuario" name="usuario" required />
+
+    <label>Senha:</label>
+    <input [(ngModel)]="senha" name="senha" type="password" required />
+
+    <button type="submit">Entrar</button>
+  </form>
+
+  <button class="btn-voltar" (click)="voltar()">⟵ Voltar</button>
+
+  <p *ngIf="erro" class="erro">{{ erro }}</p>
+</div>

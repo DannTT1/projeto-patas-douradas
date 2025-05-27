@@ -1,0 +1,26 @@
+<h2>Editar Pedido</h2>
+
+<form (ngSubmit)="salvar()" *ngIf="pedido">
+  <label>Nome:</label>
+  <input [(ngModel)]="pedido.cliente.nome" name="nome" required />
+
+  <label>Email:</label>
+  <input [(ngModel)]="pedido.cliente.email" name="email" type="email" required />
+
+  <label>Telefone:</label>
+  <input [(ngModel)]="pedido.cliente.telefone" name="telefone" required />
+
+  <h3>Itens:</h3>
+  <ul>
+    <li *ngFor="let item of pedido.itens">
+      {{ item.nome }} - R$ {{ item.preco | number: '1.2-2' }}
+    </li>
+  </ul>
+
+  <div style="margin-top: 20px;">
+    <button type="submit">Salvar</button>
+    <button type="button" (click)="voltar()">Voltar</button>
+  </div>
+</form>
+
+<p *ngIf="!pedido">Carregando pedido...</p>

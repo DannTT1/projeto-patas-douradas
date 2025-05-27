@@ -1,0 +1,47 @@
+<app-header-admin></app-header-admin> <!-- ✅ DEVE vir no topo -->
+
+<div class="pedidos-container">
+  <h2>Pedidos Realizados</h2>
+
+  <table *ngIf="pedidos.length > 0">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Data</th>
+        <th>Cliente</th>
+        <th>Email</th>
+        <th>Telefone</th>
+        <th>Produtos</th>
+        <th>Preço Total</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pedido of pedidos">
+        <td>{{ pedido.id }}</td>
+        <td>{{ pedido.data | date:'short' }}</td>
+        <td>{{ pedido.cliente?.nome }}</td>
+        <td>{{ pedido.cliente?.email }}</td>
+        <td>{{ pedido.cliente?.telefone }}</td>
+        <td>
+          <ul>
+            <li *ngFor="let item of pedido.itens">
+              {{ item.nome }} (R$ {{ item.preco | number:'1.2-2' }})
+            </li>
+          </ul>
+        </td>
+        <td>
+          R$ {{ pedido.total ? (pedido.total | number:'1.2-2') : '0.00' }}
+        </td>
+        <td>
+          <button (click)="editarPedido(pedido)">Editar</button>
+          <button (click)="excluirPedido(pedido.id)">Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p *ngIf="pedidos.length === 0">Nenhum pedido encontrado.</p>
+
+  
+</div>
