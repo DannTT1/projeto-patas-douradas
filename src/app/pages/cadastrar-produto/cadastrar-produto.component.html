@@ -1,0 +1,58 @@
+<div class="cadastro-produto-container">
+  <div class="form-container">
+    <h2 class="titulo-centralizado">Cadastrar Novo Produto</h2>
+
+    <form (ngSubmit)="salvar()" #form="ngForm">
+      <label for="nome">Nome:</label>
+      <input
+        type="text"
+        id="nome"
+        [(ngModel)]="produto.nome"
+        name="nome"
+        required
+      />
+
+      <label for="descricao">Descrição:</label>
+      <input
+        type="text"
+        id="descricao"
+        [(ngModel)]="produto.descricao"
+        name="descricao"
+        required
+      />
+
+      <label for="preco">Preço:</label>
+      <input
+        type="number"
+        id="preco"
+        [(ngModel)]="produto.preco"
+        name="preco"
+        required
+      />
+
+      <label for="imagem">Imagem (URL ou nome do arquivo):</label>
+      <input
+        type="text"
+        id="imagem"
+        [(ngModel)]="produto.imagem"
+        name="imagem"
+        required
+        placeholder="Ex: racao.png ou https://..."
+      />
+
+      <!-- 🔍 Preview dinâmico -->
+      <div *ngIf="produto.imagem" class="imagem-preview">
+        <p><strong>Pré-visualização da imagem:</strong></p>
+        <img
+          [src]="getImagemUrl(produto.imagem)"
+          alt="Preview"
+          class="preview-imagem"
+          onerror="this.style.display='none'"
+        />
+      </div>
+
+      <button type="submit" [disabled]="form.invalid">Salvar</button>
+      <button type="button" (click)="voltar()">Voltar</button>
+    </form>
+  </div>
+</div>

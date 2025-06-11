@@ -1,0 +1,33 @@
+<div class="consulta-container">
+  <h2 class="titulo">Consultar Pedido</h2>
+
+  <div class="busca-box">
+    <input [(ngModel)]="termo" placeholder="Nome, e-mail ou telefone" />
+    <button (click)="consultar()">Buscar</button>
+  </div>
+</div>
+
+<div *ngIf="resultados.length > 0">
+  <h3 class="resultados-titulo">Resultados:</h3>
+
+  <table class="tabela-pedidos">
+    <thead>
+      <tr>
+        <th>Cliente</th>
+        <th>Data</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pedido of resultados">
+        <td>{{ pedido.cliente.nome }}</td>
+        <td>{{ pedido.data | date: 'short' }}</td>
+        <td>R$ {{ getTotal(pedido) | number: '1.2-2' }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p *ngIf="resultados.length === 0 && termo">Nenhum pedido encontrado.</p>
+
+<button class="btn-voltar" (click)="voltar()">⟵ Voltar ao Painel</button>

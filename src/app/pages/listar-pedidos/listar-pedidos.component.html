@@ -1,0 +1,18 @@
+<div class="pedidos-container">
+  <h2>Pedidos Realizados</h2>
+
+  <div *ngFor="let pedido of pedidos" class="pedido">
+    <p><strong>Data:</strong> {{ pedido.data | date : "dd/MM/yyyy HH:mm" }}</p>
+    <p><strong>Itens:</strong></p>
+    <ul>
+      <li *ngFor="let item of pedido.itens">
+        {{ item.nome }} — R$ {{ item.preco | number : "1.2-2" }}
+      </li>
+    </ul>
+    <hr />
+  </div>
+
+  <div *ngIf="pedidos.length === 0">
+    <p>Nenhum pedido foi realizado ainda.</p>
+  </div>
+</div>

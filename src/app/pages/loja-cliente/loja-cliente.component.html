@@ -1,0 +1,30 @@
+<div class="page-container">
+  <app-header-cliente></app-header-cliente>
+
+  <main>
+    <div class="loja-container">
+      <h2>Seja muito bem-vindo(a) ao Petshop Patas Douradas!</h2>
+
+      <div class="produtos-grid">
+        <div class="card-produto" *ngFor="let produto of produtos">
+          <a class="produto-conteudo" [routerLink]="['/cliente/produto', produto.id]">
+            <img
+              [src]="getImagemUrl(produto.imagem)"
+              alt="{{ produto.nome }}"
+              class="produto-imagem"
+            />
+            <h3>{{ produto.nome }}</h3>
+            <p>{{ produto.descricao }}</p>
+            <strong>R$ {{ produto.preco | number : '1.2-2' }}</strong>
+          </a>
+
+          <button (click)="adicionarAoCarrinho(produto)">
+            Adicionar ao Carrinho
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <app-footer-site></app-footer-site>
+</div>

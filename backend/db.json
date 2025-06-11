@@ -1,0 +1,98 @@
+{
+  "admin": [
+    {
+      "id": "1",
+      "usuario": "admin",
+      "senha": "1234"
+    }
+  ],
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Ração Premium para Cães (15kg)",
+      "descricao": "Ração seca para cães adultos, rica em proteínas e vitaminas.",
+      "preco": 89.9,
+      "imagem": "racao-premium-canina.png"
+    },
+    {
+      "id": "2",
+      "nome": "Coleira Antipulgas para Cães e Gatos",
+      "descricao": "Protege contra pulgas e carrapatos por até 9 meses.",
+      "preco": 45,
+      "imagem": "coleira-ante-pulgas-caes-e-gatos.png"
+    },
+    {
+      "id": "3",
+      "nome": "Areia Higiênica para Gatos (5kg)",
+      "descricao": "Areia sanitária com controle de odores, super absorvente.",
+      "preco": 39.9,
+      "imagem": "areia-higienica-felina-5kg.png"
+    },
+    {
+      "id": "4",
+      "nome": "Mordedor Pequeno Canino",
+      "descricao": "Ideal para brincadeiras com filhotes. Resistente e flexível, estimula a mordida e protege seus móveis.",
+      "preco": 9.99,
+      "imagem": "mordedor-pequeno-canino.png"
+    },
+    {
+      "id": "5",
+      "nome": "Coleira Peitoral Canina",
+      "descricao": "Oferece mais conforto e segurança nos passeios. Não machuca nem sufoca o pet.",
+      "preco": 34.99,
+      "imagem": "coleira-peitoral-canina.png"
+    },
+    {
+      "id": "6",
+      "nome": "Arranhador felino",
+      "descricao": "Arranhador felino ideal para afiar as garras, aliviar o estresse e manter seu gato entretido e longe dos móveis.",
+      "preco": 14.99,
+      "imagem": "arranhador-felino.png"
+    }
+  ],
+  "pedidos": [
+    {
+      "id": "1",
+      "data": "2025-06-11T08:17:15.570Z",
+      "cliente": {
+        "nome": "MATHEUS CARDOSO REZENDE",
+        "email": "matheus.cardoso97@outlook.com",
+        "telefone": "11972981605"
+      },
+      "itens": [
+        {
+          "id": "1",
+          "nome": "Ração Premium para Cães (15kg)",
+          "descricao": "Ração seca para cães adultos, rica em proteínas e vitaminas.",
+          "preco": 89.9,
+          "imagem": "racao-premium-canina.png"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "data": "2025-06-11T08:31:06.687Z",
+      "cliente": {
+        "nome": "MATHEUS CARD",
+        "email": "matheus.cardoso97@outlook.com",
+        "telefone": "11972981605"
+      },
+      "itens": [
+        {
+          "id": "2",
+          "nome": "Coleira Antipulgas para Cães e Gatos",
+          "descricao": "Protege contra pulgas e carrapatos por até 9 meses.",
+          "preco": 45,
+          "imagem": "coleira-ante-pulgas-caes-e-gatos.png"
+        },
+        {
+          "id": "2",
+          "nome": "Coleira Antipulgas para Cães e Gatos",
+          "descricao": "Protege contra pulgas e carrapatos por até 9 meses.",
+          "preco": 45,
+          "imagem": "coleira-ante-pulgas-caes-e-gatos.png"
+        }
+      ]
+    }
+  ]
+}

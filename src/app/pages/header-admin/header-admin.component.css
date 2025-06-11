@@ -1,0 +1,30 @@
+.cabecalho-admin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: white;
+  padding: 10px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.menu a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.menu a:hover {
+  color: #ffc107;
+}
+
+.menu a.ativo {
+  text-decoration: underline;
+  font-weight: bold;
+}

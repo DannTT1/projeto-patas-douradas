@@ -1,0 +1,21 @@
+<div class="page-container">
+  <main>
+    <button (click)="voltar()">Voltar</button>
+
+    <div class="produto-detalhes" *ngIf="produto">
+      <img
+        [src]="getImagemUrl(produto.imagem)"
+        alt="{{ produto.nome }}"
+        class="produto-imagem"
+      />
+
+      <div class="info">
+        <h2>{{ produto.nome }}</h2>
+        <p>{{ produto.descricao }}</p>
+        <strong>Preço: R$ {{ produto.preco | number : '1.2-2' }}</strong>
+      </div>
+    </div>
+  </main>
+
+  <app-footer-site></app-footer-site>
+</div>

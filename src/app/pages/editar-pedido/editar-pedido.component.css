@@ -1,0 +1,85 @@
+:host {
+  display: block;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+input {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Lista de itens */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0 10px;
+  text-align: left;
+  max-width: 400px;
+  width: 100%;
+}
+
+li {
+  background-color: #fff;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+/* Botões */
+button {
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 10px 8px 0;
+  transition: background-color 0.3s ease;
+}
+
+/* Salvar = primário */
+button[type="submit"] {
+  background-color: #ffa500;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: #e69500;
+}
+
+/* Voltar = secundário */
+button[type="button"] {
+  background-color: #ccc;
+  color: #222;
+}
+
+button[type="button"]:hover {
+  background-color: #bbb;
+}

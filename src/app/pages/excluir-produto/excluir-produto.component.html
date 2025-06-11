@@ -1,0 +1,32 @@
+<div class="excluir-container">
+  <h2 class="titulo">Excluir Produtos</h2>
+
+  <table class="tabela-produtos" *ngIf="produtos.length > 0">
+    <thead>
+      <tr>
+        <th>Imagem</th>
+        <th>Nome</th>
+        <th>Preço</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let produto of produtos">
+        <td>
+          <img [src]="getImagemUrl(produto.imagem)" alt="{{ produto.nome }}" class="img-tabela" />
+        </td>
+        <td>{{ produto.nome }}</td>
+        <td>R$ {{ produto.preco.toFixed(2) }}</td>
+        <td>
+          <button *ngIf="produto.id !== undefined" (click)="excluir(produto.id!)" class="btn-excluir">
+            🗑️ Excluir
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p *ngIf="produtos.length === 0" class="nenhum-produto">Nenhum produto encontrado.</p>
+
+  <button class="btn-voltar" (click)="voltar()">⟵ Voltar ao Painel</button>
+</div>
